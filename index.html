@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Skin Fix — Simple Skincare Tweaks That Make a Big Difference</title>
+<meta name="description" content="Discover and correct invisible daily skincare mistakes. Learn what to stop doing, avoid wasting money on unnecessary products, and create a simpler, more effective routine.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Skin Fix — Simple Skincare Tweaks That Make a Big Difference">
+<meta property="og:description" content="Discover and correct invisible daily skincare mistakes. Learn what to stop doing, avoid wasting money on unnecessary products, and create a simpler, more effective routine.">
+<meta property="og:image" content="guide-mockup.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="logo-gold.png">
+<link rel="preload" as="image" href="hero-bg.png" media="(min-width:1024px)">
+<link rel="preload" as="image" href="hero-bg-mobile.png" media="(max-width:1023px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html{-webkit-text-size-adjust:100%;scrollbar-width:thin;scrollbar-color:#1C4230 #E7E7E3}
+body{margin:0;background:#FFFFFF;color:#000000;font-family:Manrope,'Segoe UI',system-ui,sans-serif;font-size:18px;line-height:1.75;text-wrap:pretty;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+h1,h2,h3,p,ul,li,figure,blockquote{margin:0;padding:0}
+h1,h2,h3{text-wrap:balance;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-0.005em}
+ul{list-style:none}
+img,svg{max-width:100%}
+a{color:#1C4230;text-decoration:none}
+a:hover{color:#B8862F}
+button{font-family:inherit}
+:focus-visible{outline:2px solid #B8862F;outline-offset:3px;border-radius:6px}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#EFEFEC}
+::-webkit-scrollbar-thumb{background:#1C4230;border-radius:999px;border:2px solid #FFFFFF}
+::-webkit-scrollbar-thumb:hover{background:#B8862F}
+
+/* ---- Header ---- */
+#site-header{position:sticky;top:0;z-index:40;background:#FFFFFF;border-bottom:1px solid rgba(30,30,28,0.09);transform:translateY(0);opacity:1;will-change:transform;transition:transform 1000ms cubic-bezier(0.33,1,0.68,1),opacity 800ms ease}
+#site-header.hidden{transform:translateY(-105%);opacity:0;pointer-events:none}
+
+/* ---- CTA buttons ---- */
+.cta-primary{display:inline-flex;align-items:center;gap:10px;background:#1C4230;color:#FFFFFF;font-weight:700;font-size:16.5px;line-height:1;padding:19px 34px;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.18),inset 0 -2px 0 rgba(0,0,0,0.18),0 18px 34px -16px rgba(28,66,48,0.75);transition:transform 480ms cubic-bezier(0.33,1,0.68,1),box-shadow 520ms ease,background 480ms ease}
+.cta-primary:hover,.cta-primary:focus-visible{color:#FFFFFF;background:#153525;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 26px 44px -18px rgba(28,66,48,0.8)}
+.cta-primary:active{transform:translateY(0)}
+.cta-primary--sm{font-weight:600;font-size:16px;padding:18px 32px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.18),inset 0 -2px 0 rgba(0,0,0,0.16),0 16px 30px -14px rgba(28,66,48,0.75)}
+.cta-header{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;font-weight:600;font-size:15px;line-height:1;color:#FFFFFF;background:#1C4230;padding:14px 24px;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.18),0 12px 24px -14px rgba(28,66,48,0.75);transition:background 480ms cubic-bezier(0.33,1,0.68,1),transform 480ms cubic-bezier(0.33,1,0.68,1),box-shadow 520ms ease}
+.cta-header:hover,.cta-header:focus-visible{color:#FFFFFF;background:#153525;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 18px 32px -16px rgba(28,66,48,0.8)}
+.cta-header:active{transform:translateY(0)}
+.cta-gold{display:inline-flex;align-items:center;gap:10px;background:#D9A94A;color:#12251A;font-weight:700;font-size:16.5px;line-height:1;padding:19px 36px;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.35),inset 0 -2px 0 rgba(0,0,0,0.18),0 18px 34px -16px rgba(217,169,74,0.85);transition:background 480ms ease,transform 480ms cubic-bezier(0.33,1,0.68,1)}
+.cta-gold:hover,.cta-gold:focus-visible{color:#1C2A20;background:#E4BA63;transform:translateY(-2px)}
+.cta-gold:active{transform:translateY(0)}
+.cta-white{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#FFFFFF;color:#1C4230;font-weight:600;font-size:15.5px;line-height:1;padding:15px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 14px 26px -14px rgba(0,0,0,0.6);transition:background 480ms ease,transform 480ms cubic-bezier(0.33,1,0.68,1)}
+.cta-white:hover,.cta-white:focus-visible{color:#1C4230;background:#F0EFEA;transform:translateY(-2px)}
+
+/* ---- CTA shine sweep ---- */
+@keyframes shine{0%{transform:translateX(-120%) skewX(-18deg)}100%{transform:translateX(320%) skewX(-18deg)}}
+[data-cta],[data-header-cta],#sticky-cta a{position:relative;overflow:hidden;isolation:isolate}
+[data-cta]::after,[data-header-cta]::after,#sticky-cta a::after{content:"";position:absolute;top:-40%;bottom:-40%;left:0;width:38%;pointer-events:none;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.42) 50%,rgba(255,255,255,0) 100%);opacity:0;transform:translateX(-120%) skewX(-18deg)}
+[data-cta]:hover::after,[data-cta]:focus-visible::after,[data-cta]:active::after,[data-header-cta]:hover::after,[data-header-cta]:active::after,#sticky-cta a:hover::after,#sticky-cta a:active::after{opacity:1;animation:shine 950ms cubic-bezier(0.33,1,0.68,1)}
+
+/* ---- Marquees ---- */
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes marq2{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+
+/* ---- Cards ---- */
+.method-card{display:flex;flex-direction:column;background:#FFFFFF;border-radius:20px;padding:16px;box-shadow:0 1px 2px rgba(30,30,28,0.04);transition:transform 520ms cubic-bezier(0.33,1,0.68,1),box-shadow 520ms ease}
+.method-card:hover{transform:translateY(-4px);box-shadow:0 2px 6px rgba(30,30,28,0.05),0 30px 52px -30px rgba(28,66,48,0.55)}
+.step-num{font-size:40px;line-height:1;font-weight:800;color:rgba(30,30,28,0.16);transition:color 520ms ease}
+.method-card:hover .step-num,.method-card.inview .step-num{color:#D9A94A}
+.mistake-card{display:flex;align-items:center;gap:18px;background:#F4F4F1;border:1px solid rgba(30,30,28,0.06);border-radius:18px;padding:24px 26px;transition:transform 520ms cubic-bezier(0.33,1,0.68,1),box-shadow 520ms ease,background 520ms ease}
+.mistake-card:hover{transform:translateY(-3px);background:#FFFFFF;box-shadow:0 2px 6px rgba(30,30,28,0.05),0 26px 46px -28px rgba(28,66,48,0.5)}
+.inside-card{background:#FFFFFF;border-radius:20px;padding:16px;transition:transform 520ms cubic-bezier(0.33,1,0.68,1),box-shadow 520ms ease}
+.inside-card:hover{transform:translateY(-4px);box-shadow:0 2px 6px rgba(30,30,28,0.05),0 30px 52px -30px rgba(28,66,48,0.55)}
+
+/* ---- FAQ accordion ---- */
+.faq-card{background:#F4F4F1;border:1px solid rgba(30,30,28,0.07);border-radius:16px;overflow:hidden;transition:background 620ms ease,border-color 620ms ease,box-shadow 560ms ease,transform 560ms cubic-bezier(0.33,1,0.68,1)}
+.faq-card:hover{transform:translateY(-2px);box-shadow:0 22px 40px -28px rgba(28,66,48,0.55)}
+.faq-card.open{background:#1C4230;border-color:#1C4230}
+.faq-card button{width:100%;background:none;border:0;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px;text-align:left;cursor:pointer;color:#000000;transition:color 620ms ease}
+.faq-card.open button{color:#FFFFFF}
+.faq-badge{flex:none;width:30px;height:30px;border-radius:999px;background:rgba(28,66,48,0.09);display:flex;align-items:center;justify-content:center;transition:background 620ms ease}
+.faq-card.open .faq-badge{background:rgba(255,255,255,0.14)}
+.faq-badge svg{transition:transform 620ms cubic-bezier(0.33,1,0.68,1);transform:rotate(0deg)}
+.faq-card.open .faq-badge svg{transform:rotate(135deg)}
+.faq-badge svg path{stroke:#1C4230;transition:stroke 620ms ease}
+.faq-card.open .faq-badge svg path{stroke:#D9A94A}
+.faq-answer{overflow:hidden;max-height:0;opacity:0;transition:max-height 1000ms cubic-bezier(0.33,1,0.68,1),opacity 900ms ease}
+.faq-card.open .faq-answer{max-height:180px;opacity:1}
+.faq-answer p{padding:0 22px 22px;font-size:16.5px;line-height:1.7;max-width:60ch;color:rgba(0,0,0,0.84);transform:translateY(-6px);transition:transform 1000ms cubic-bezier(0.33,1,0.68,1),color 620ms ease}
+.faq-card.open .faq-answer p{color:rgba(255,255,255,0.75);transform:translateY(0)}
+
+/* ---- Sticky mobile CTA ---- */
+#sticky-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,0.55);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border-top:1px solid rgba(30,30,28,0.10);box-shadow:0 -1px 0 rgba(255,255,255,0.7) inset,0 -18px 40px -20px rgba(0,0,0,0.42);padding:12px 16px calc(12px + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:16px;min-height:58px;will-change:transform;transform:translateY(115%);opacity:0;pointer-events:none;transition:transform 1100ms cubic-bezier(0.33,1,0.68,1) 240ms,opacity 900ms ease 240ms}
+#sticky-cta.visible{transform:translateY(0);opacity:1;pointer-events:auto}
+
+/* ---- Scroll reveal ---- */
+.reveal-pending{opacity:0;transform:translateY(14px);transition:opacity 620ms ease,transform 620ms cubic-bezier(0.33,1,0.68,1)}
+.reveal-pending.revealed{opacity:1;transform:none}
+
+@media (max-width:1023px){
+  [data-hero-sect]{background:#F4F5F0;display:flex!important;flex-direction:column!important}
+  [data-hero-wrap]{grid-template-columns:minmax(0,1fr)!important;align-items:start!important;min-height:0!important;padding-top:16px!important}
+  [data-hero-copy]{max-width:none!important}
+  #hero-bg{position:relative!important;inset:auto!important;height:auto!important;aspect-ratio:1080/790!important;background-image:url(hero-bg-mobile.png)!important;background-position:center top!important;background-size:cover!important;padding:0!important}
+  [data-two]{grid-template-columns:minmax(0,1fr)!important}
+  [data-faq-grid]{grid-template-columns:minmax(0,1fr)!important}
+}
+@media (max-width:767px){
+  #sticky-cta{display:flex}
+  [data-cta]{width:100%;justify-content:center}
+  [data-cta-wrap]{width:100%;justify-content:center}
+  [data-col]{text-align:center}
+  [data-col] p,[data-col] h2,[data-col] h3{margin-left:auto;margin-right:auto}
+  [data-col] li{text-align:left}
+  [data-footer]{flex-direction:column;align-items:center;text-align:center;gap:24px}
+  [data-footer] nav{justify-content:center}
+  [data-seal]{flex-direction:column;text-align:center}
+  [data-hero-wrap]{padding-top:12px!important;padding-left:20px!important;padding-right:20px!important;padding-bottom:44px!important}
+  [data-hero-copy] h1{font-size:clamp(35px,9.4vw,46px)!important}
+  h2{font-size:clamp(31px,8.2vw,42px)!important}
+  section h2{margin-bottom:4px}
+  [data-hero-copy] p{font-size:16px!important}
+  [data-pad]{padding:22px!important}
+  #header-logo{height:62px!important}
+  #footer-logo{height:78px!important}
+  [data-header-bar]{padding:10px 16px!important}
+  [data-hero-copy]{text-align:center}
+  [data-hero-copy] h1,[data-hero-copy] p{margin-left:auto;margin-right:auto}
+  [data-hero-copy] ul{align-items:center}
+  [data-hero-copy] li{text-align:left;max-width:34ch;width:100%}
+  [data-hero-copy] [data-cta-wrap]{justify-content:center;flex-direction:column;align-items:stretch}
+  [data-hero-copy] [data-cta-wrap] > span{text-align:center}
+  section[aria-label="The Method"] p,section[aria-label="What's Inside"] figcaption{text-align:center}
+  section[aria-label="Guarantee"] p,section[aria-label="Outcome"] p{margin-left:auto;margin-right:auto}
+  blockquote{text-align:center;align-items:center}
+  blockquote footer{align-items:center}
+  .faq-card button{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div data-header-bar style="max-width:1180px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="#top" aria-label="The Skin Fix" style="flex:none;display:flex;align-items:center"><img id="header-logo" src="logo-gold.png" alt="The Skin Fix" style="height:76px;width:auto;display:block"></a>
+    <a data-header-cta class="cta-header" href="https://pay.hotmart.com/C103466580K">Get the guide<span style="color:#B8862F">$9</span></a>
+  </div>
+</header>
+
+<section id="top" aria-label="Hero" data-hero-sect style="position:relative;background:#F4F5F0;overflow:hidden;isolation:isolate">
+  <div id="hero-bg" role="img" aria-label="Woman aged 45 to 55 in natural light beside The Skin Fix guide" style="position:absolute;inset:0;z-index:0;background-color:#F4F5F0;background-image:url(hero-bg.png);background-size:cover;background-position:center center;background-repeat:no-repeat"></div>
+  <div data-hero-wrap style="position:relative;z-index:1;max-width:1320px;margin:0 auto;min-height:min(1000px,92vh);display:grid;grid-template-columns:minmax(0,0.92fr) minmax(0,1.08fr);align-items:center;padding:clamp(48px,5vw,88px) clamp(24px,4vw,72px)">
+    <div data-hero-copy data-reveal style="max-width:600px">
+      <span style="display:inline-flex;align-items:center;gap:9px;white-space:nowrap;background:#FFFFFF;border:1px solid rgba(184,134,47,0.45);color:#8A6420;font-weight:600;font-size:12.5px;letter-spacing:0.06em;text-transform:uppercase;padding:9px 18px;border-radius:999px">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.6l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L2.8 7.9l5-.7L10 2.6z" stroke="#D9A94A" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        Science-backed, no hype
+      </span>
+      <h1 style="margin-top:26px;font-size:clamp(42px,4.9vw,70px);line-height:1.04;color:#000000">You're Not Doing Skincare Wrong. <em style="font-style:italic;color:#B8862F">You're Following the Wrong Advice.</em></h1>
+      <p style="margin-top:22px;font-size:17.5px;line-height:1.7;color:rgba(0,0,0,0.78);max-width:48ch">Discover the invisible daily mistakes that quietly sabotage your skin, and the simple routine that helps restore balance, clarity, and glow for just $9.</p>
+      <ul style="margin-top:28px;display:flex;flex-direction:column;gap:12px">
+          <li style="display:flex;gap:13px;align-items:center;min-height:34px;font-size:16.5px;line-height:1.55;color:rgba(0,0,0,0.86)">
+            <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="15" cy="15" r="14.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="15" cy="15" r="11.9" fill="rgba(28,66,48,0.10)"/><circle cx="15" cy="15" r="11.9" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(15 15) scale(0.577) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+            <span>Why &quot;more products&quot; often make your skin worse</span>
+          </li>
+          <li style="display:flex;gap:13px;align-items:center;min-height:34px;font-size:16.5px;line-height:1.55;color:rgba(0,0,0,0.86)">
+            <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="15" cy="15" r="14.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="15" cy="15" r="11.9" fill="rgba(28,66,48,0.10)"/><circle cx="15" cy="15" r="11.9" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(15 15) scale(0.577) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+            <span>The hidden habits behind breakouts and dullness</span>
+          </li>
+          <li style="display:flex;gap:13px;align-items:center;min-height:34px;font-size:16.5px;line-height:1.55;color:rgba(0,0,0,0.86)">
+            <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="15" cy="15" r="14.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="15" cy="15" r="11.9" fill="rgba(28,66,48,0.10)"/><circle cx="15" cy="15" r="11.9" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(15 15) scale(0.577) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+            <span>A realistic routine you can actually stick to</span>
+          </li>
+      </ul>
+      <div data-cta-wrap style="margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:18px">
+        <a data-cta class="cta-primary" href="https://pay.hotmart.com/C103466580K">
+          Get Instant Access for $9
+          <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m0 0l-4.2-4.2M15 10l-4.2 4.2" stroke="#D9A94A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <span style="font-size:14.5px;line-height:1.5;color:rgba(0,0,0,0.6)">Instant download · Secure checkout</span>
+      </div>
+    </div>
+    <div aria-hidden="true"></div>
+  </div>
+</section>
+
+<div aria-hidden="true" style="background:#1C4230;overflow:hidden;padding:13px 0">
+  <div style="display:flex;width:max-content;animation:marq 34s linear infinite">
+    <div style="display:flex;align-items:center;gap:34px;padding-right:34px;color:#FFFFFF;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap">
+      <span>Barrier first</span><span style="color:#D9A94A">✦</span><span>Fewer products</span><span style="color:#D9A94A">✦</span><span>Real consistency</span><span style="color:#D9A94A">✦</span><span>No 10-step routines</span><span style="color:#D9A94A">✦</span><span>Clarity over hype</span><span style="color:#D9A94A">✦</span>
+      <span>Barrier first</span><span style="color:#D9A94A">✦</span><span>Fewer products</span><span style="color:#D9A94A">✦</span><span>Real consistency</span><span style="color:#D9A94A">✦</span><span>No 10-step routines</span><span style="color:#D9A94A">✦</span><span>Clarity over hype</span><span style="color:#D9A94A">✦</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:34px;padding-right:34px;color:#FFFFFF;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap">
+      <span>Barrier first</span><span style="color:#D9A94A">✦</span><span>Fewer products</span><span style="color:#D9A94A">✦</span><span>Real consistency</span><span style="color:#D9A94A">✦</span><span>No 10-step routines</span><span style="color:#D9A94A">✦</span><span>Clarity over hype</span><span style="color:#D9A94A">✦</span>
+      <span>Barrier first</span><span style="color:#D9A94A">✦</span><span>Fewer products</span><span style="color:#D9A94A">✦</span><span>Real consistency</span><span style="color:#D9A94A">✦</span><span>No 10-step routines</span><span style="color:#D9A94A">✦</span><span>Clarity over hype</span><span style="color:#D9A94A">✦</span>
+    </div>
+  </div>
+</div>
+
+<section aria-label="Empathy" style="background:#FFFFFF;padding:clamp(72px,8vw,112px) 24px;text-align:center">
+  <div data-reveal style="max-width:720px;margin:0 auto">
+    <p style="font-weight:600;font-size:14px;letter-spacing:0.02em;color:rgba(0,0,0,0.70)">You take care of your skin. You buy good products. You try to stay consistent.</p>
+    <h2 style="margin-top:20px;font-size:clamp(34px,3.8vw,52px);line-height:1.14;max-width:22ch;margin-left:auto;margin-right:auto">And yet your skin still feels <span style="color:#B8862F">dry, irritated, or dull.</span></h2>
+    <p style="margin-top:26px;font-size:17.5px;line-height:1.75;max-width:56ch;margin-left:auto;margin-right:auto;color:rgba(0,0,0,0.82)">That's not because you're careless. It's because most skincare advice ignores how your skin actually functions.</p>
+  </div>
+</section>
+
+<section aria-label="The Method" style="background:#F4F4F1;padding:clamp(72px,8vw,112px) 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div data-reveal style="text-align:center">
+      <h2 style="font-size:clamp(36px,4vw,54px);line-height:1.1">The <span style="color:#B8862F">Method</span></h2>
+      <p style="margin-top:14px;font-size:17px;line-height:1.7;max-width:48ch;margin:14px auto 0;color:rgba(0,0,0,0.78)">Three simple shifts that rebuild your routine from the barrier up.</p>
+    </div>
+    <div data-reveal style="margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px">
+      <div class="method-card">
+        <img src="method-01.png" alt="Identify the mistakes" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block" loading="lazy">
+        <div style="padding:18px 12px 10px;text-align:center">
+          <p class="step-num">01</p>
+        </div>
+      </div>
+      <div class="method-card">
+        <img src="method-02.png" alt="Remove the excess" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block" loading="lazy">
+        <div style="padding:18px 12px 10px;text-align:center">
+          <p class="step-num">02</p>
+        </div>
+      </div>
+      <div class="method-card">
+        <img src="method-03.png" alt="Build a balance routine" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block" loading="lazy">
+        <div style="padding:18px 12px 10px;text-align:center">
+          <p class="step-num">03</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Common Invisible Skincare Mistakes" style="background:#FFFFFF;padding:clamp(72px,8vw,112px) 24px">
+  <div style="max-width:1000px;margin:0 auto">
+    <h2 data-reveal style="font-size:clamp(34px,3.8vw,52px);line-height:1.12;text-align:center;max-width:22ch;margin:0 auto">Common <span style="color:#B8862F">Invisible</span> Skincare Mistakes</h2>
+    <div data-reveal style="margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px">
+      <div data-pad class="mistake-card">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-hidden="true"><circle cx="25" cy="25" r="24.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="25" cy="25" r="19.8" fill="rgba(158,59,43,0.09)"/><circle cx="25" cy="25" r="19.8" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(25 25) scale(0.962) translate(-26 -26)"><path d="M26 15.6l9.6 4.8-9.6 4.8-9.6-4.8 9.6-4.8z" stroke="#9E3B2B" stroke-width="1.9" stroke-linejoin="round"/><path d="M16.4 26.2l9.6 4.8 9.6-4.8M16.4 31.4l9.6 4.8 9.6-4.8" stroke="#9E3B2B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+        <p style="font-size:17.5px;line-height:1.55;max-width:26ch">Layering products that cancel each other out</p>
+      </div>
+      <div data-pad class="mistake-card">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-hidden="true"><circle cx="25" cy="25" r="24.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="25" cy="25" r="19.8" fill="rgba(158,59,43,0.09)"/><circle cx="25" cy="25" r="19.8" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(25 25) scale(0.962) translate(-26 -26)"><path d="M26 15.4c4 4.6 6.4 7.8 6.4 10.8A6.4 6.4 0 0126 32.6a6.4 6.4 0 01-6.4-6.4c0-3 2.4-6.2 6.4-10.8z" stroke="#9E3B2B" stroke-width="1.9" stroke-linejoin="round"/><path d="M17 35.6L35 17.4" stroke="#9E3B2B" stroke-width="1.9" stroke-linecap="round"/></g></svg></span>
+        <p style="font-size:17.5px;line-height:1.55;max-width:26ch">Over-cleansing or stripping the skin barrier</p>
+      </div>
+      <div data-pad class="mistake-card">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-hidden="true"><circle cx="25" cy="25" r="24.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="25" cy="25" r="19.8" fill="rgba(158,59,43,0.09)"/><circle cx="25" cy="25" r="19.8" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(25 25) scale(0.962) translate(-26 -26)"><path d="M22.6 15.4h6.8M23.8 15.4v6.8L18.4 32a3.1 3.1 0 002.7 4.7h9.8a3.1 3.1 0 002.7-4.7l-5.4-9.8v-6.8" stroke="#9E3B2B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.6 30.6h10.8" stroke="#9E3B2B" stroke-width="1.9" stroke-linecap="round"/></g></svg></span>
+        <p style="font-size:17.5px;line-height:1.55;max-width:26ch">Using actives without proper recovery</p>
+      </div>
+      <div data-pad class="mistake-card">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" aria-hidden="true"><circle cx="25" cy="25" r="24.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="25" cy="25" r="19.8" fill="rgba(158,59,43,0.09)"/><circle cx="25" cy="25" r="19.8" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(25 25) scale(0.962) translate(-26 -26)"><circle cx="26" cy="26" r="10.2" stroke="#9E3B2B" stroke-width="1.9"/><circle cx="26" cy="26" r="5.2" stroke="#9E3B2B" stroke-width="1.9"/><circle cx="26" cy="26" r="1.8" fill="#9E3B2B"/></g></svg></span>
+        <p style="font-size:17.5px;line-height:1.55;max-width:26ch">Treating symptoms instead of the root cause</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Why This Guide Exists" style="background:#F4F4F1;padding:clamp(72px,8vw,112px) 24px">
+  <div data-two style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:clamp(32px,4vw,64px);align-items:center">
+    <div data-reveal>
+      <img src="why-portrait.png" alt="Create from real routines and research. No hype, no trends, just clarity." style="width:100%;aspect-ratio:1000/1150;object-fit:cover;border-radius:22px;display:block" loading="lazy">
+    </div>
+    <div data-reveal data-col>
+      <h2 style="font-size:clamp(34px,3.8vw,52px);line-height:1.12">Why This <span style="color:#B8862F">Guide Exists</span></h2>
+      <p style="margin-top:24px;font-size:17.5px;line-height:1.75;max-width:50ch;color:rgba(0,0,0,0.82)">This guide was created for people who are already trying, but feel stuck, confused, or disappointed by their results.</p>
+      <ul style="margin-top:26px;display:grid;gap:12px;max-width:50ch">
+        <li style="display:flex;align-items:center;gap:12px;background:#FFFFFF;border-radius:14px;padding:16px 20px;font-weight:600;font-size:17px">
+          <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="17" cy="17" r="13.4" fill="rgba(158,59,43,0.09)"/><circle cx="17" cy="17" r="13.4" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(17 17) scale(0.654) translate(-26 -26)"><path d="M20 20l12 12M32 20L20 32" stroke="#9E3B2B" stroke-width="2.4" stroke-linecap="round"/></g></svg></span>
+          No hype
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;background:#FFFFFF;border-radius:14px;padding:16px 20px;font-weight:600;font-size:17px">
+          <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="17" cy="17" r="13.4" fill="rgba(158,59,43,0.09)"/><circle cx="17" cy="17" r="13.4" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(17 17) scale(0.654) translate(-26 -26)"><path d="M20 20l12 12M32 20L20 32" stroke="#9E3B2B" stroke-width="2.4" stroke-linecap="round"/></g></svg></span>
+          No 10-step routines
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;background:#FFFFFF;border-radius:14px;padding:16px 20px;font-weight:600;font-size:17px">
+          <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16.2" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="17" cy="17" r="13.4" fill="rgba(158,59,43,0.09)"/><circle cx="17" cy="17" r="13.4" stroke="#9E3B2B" stroke-width="1.3"/><g transform="translate(17 17) scale(0.654) translate(-26 -26)"><path d="M20 20l12 12M32 20L20 32" stroke="#9E3B2B" stroke-width="2.4" stroke-linecap="round"/></g></svg></span>
+          No pressure to buy expensive products
+        </li>
+      </ul>
+      <p style="margin-top:24px;font-size:17.5px;line-height:1.75;max-width:50ch;color:rgba(0,0,0,0.78)">Just clarity, structure, and a smarter way to care for your skin, for less than the price of a coffee.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-label="The Skin Fix Guide" style="background:#FFFFFF;padding:clamp(72px,8vw,112px) 24px">
+  <div data-two style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,4vw,64px);align-items:center">
+    <div data-reveal data-col>
+      <h2 style="font-size:clamp(34px,3.8vw,52px);line-height:1.12">The <span style="color:#B8862F">Skin Fix</span> Guide</h2>
+      <p style="margin-top:24px;font-size:17.5px;line-height:1.75;max-width:50ch;color:rgba(0,0,0,0.82)">A practical, easy-to-follow digital guide that helps you:</p>
+      <ul style="margin-top:22px;display:grid;gap:12px;max-width:50ch">
+        <li style="display:flex;gap:13px;align-items:center;background:#F4F4F1;border-radius:14px;padding:16px 20px;font-size:17px;line-height:1.55">
+          <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="17" cy="17" r="13.4" fill="rgba(28,66,48,0.10)"/><circle cx="17" cy="17" r="13.4" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(17 17) scale(0.654) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+          Understand what your skin actually needs
+        </li>
+        <li style="display:flex;gap:13px;align-items:center;background:#F4F4F1;border-radius:14px;padding:16px 20px;font-size:17px;line-height:1.55">
+          <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="17" cy="17" r="13.4" fill="rgba(28,66,48,0.10)"/><circle cx="17" cy="17" r="13.4" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(17 17) scale(0.654) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+          Identify and stop the habits holding you back
+        </li>
+        <li style="display:flex;gap:13px;align-items:center;background:#F4F4F1;border-radius:14px;padding:16px 20px;font-size:17px;line-height:1.55">
+          <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="17" cy="17" r="13.4" fill="rgba(28,66,48,0.10)"/><circle cx="17" cy="17" r="13.4" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(17 17) scale(0.654) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+          Build a simple routine that works long-term
+        </li>
+      </ul>
+      <p style="margin-top:24px;font-weight:600;font-size:17.5px">Instant download. One-time payment. <span style="color:#B8862F">$9 total.</span></p>
+      <div data-cta-wrap style="margin-top:26px;display:flex">
+        <a data-cta class="cta-primary cta-primary--sm" href="https://pay.hotmart.com/C103466580K">
+          Get Instant Access for $9
+          <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m0 0l-4.2-4.2M15 10l-4.2 4.2" stroke="#D9A94A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div data-reveal>
+      <img src="guide-mockup.png" alt="The Skin Fix guide shown on book, iMac, tablet, phone and laptop" style="width:100%;aspect-ratio:1600/1200;object-fit:cover;border-radius:22px;display:block" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section aria-label="What's Inside" style="background:#F4F4F1;padding:clamp(72px,8vw,112px) 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <h2 data-reveal style="font-size:clamp(34px,3.8vw,52px);line-height:1.12;text-align:center">What's <span style="color:#B8862F">Inside</span></h2>
+    <div data-reveal style="margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px">
+      <figure class="inside-card">
+        <img src="inside-01.png" alt="Guide spread: conventional methods versus holistic care comparison" style="width:100%;aspect-ratio:800/1000;object-fit:cover;border-radius:14px;display:block" loading="lazy">
+        <figcaption style="padding:16px 8px 8px;text-align:center;font-size:16px;line-height:1.55;color:rgba(0,0,0,0.82)">The mistake-by-mistake breakdown</figcaption>
+      </figure>
+      <figure class="inside-card">
+        <img src="inside-02.png" alt="Guide spread: morning routine and night routine, step by step with timings" style="width:100%;aspect-ratio:800/1000;object-fit:cover;border-radius:14px;display:block" loading="lazy">
+        <figcaption style="padding:16px 8px 8px;text-align:center;font-size:16px;line-height:1.55;color:rgba(0,0,0,0.82)">Your morning and night routine, step by step</figcaption>
+      </figure>
+      <figure class="inside-card">
+        <img src="inside-03.png" alt="Guide spread: morning and evening routine in five clear steps" style="width:100%;aspect-ratio:800/1000;object-fit:cover;border-radius:14px;display:block" loading="lazy">
+        <figcaption style="padding:16px 8px 8px;text-align:center;font-size:16px;line-height:1.55;color:rgba(0,0,0,0.82)">Cleanse, tone, treat, moisturize, protect</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div aria-hidden="true" style="background:linear-gradient(180deg,#E4BA63 0%,#D9A94A 100%);overflow:hidden;padding:13px 0;border-top:1px solid rgba(0,0,0,0.06);border-bottom:1px solid rgba(0,0,0,0.06)">
+  <div style="display:flex;width:max-content;animation:marq2 38s linear infinite">
+    <div style="display:flex;align-items:center;gap:34px;padding-right:34px;color:#12251A;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap"><span>Instant digital access</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>One-time payment of $9</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>7-day money-back guarantee</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Secure checkout</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Read on any device</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Instant digital access</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>One-time payment of $9</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>7-day money-back guarantee</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Secure checkout</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Read on any device</span><span style="color:rgba(28,66,48,0.55)">✦</span></div>
+    <div style="display:flex;align-items:center;gap:34px;padding-right:34px;color:#12251A;font-weight:700;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap"><span>Instant digital access</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>One-time payment of $9</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>7-day money-back guarantee</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Secure checkout</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Read on any device</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Instant digital access</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>One-time payment of $9</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>7-day money-back guarantee</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Secure checkout</span><span style="color:rgba(28,66,48,0.55)">✦</span><span>Read on any device</span><span style="color:rgba(28,66,48,0.55)">✦</span></div>
+  </div>
+</div>
+
+<!--
+  "What Readers Are Saying" section: enable only with real, verified reader quotes.
+  Replace the three quote/attribution placeholders, then remove this comment wrapper.
+
+<section aria-label="What Readers Are Saying" style="background:#FFFFFF;padding:clamp(72px,8vw,112px) 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <h2 data-reveal style="font-size:clamp(34px,3.8vw,52px);line-height:1.12;text-align:center">What <span style="color:#B8862F">Readers</span> Are Saying</h2>
+    <div data-reveal style="margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+      <blockquote data-pad style="background:#F4F4F1;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:22px">
+        <p style="font-size:19px;line-height:1.6;color:rgba(0,0,0,0.84);min-height:120px">[Verified reader quote]</p>
+        <footer style="display:flex;flex-direction:column;gap:5px;margin-top:auto">
+          <span style="font-weight:600;font-size:15px;color:rgba(0,0,0,0.62)">[Initials · City, ST]</span>
+          <span style="font-size:13px;color:rgba(0,0,0,0.42)">[Optional disclosure label]</span>
+        </footer>
+      </blockquote>
+      <blockquote data-pad style="background:#F4F4F1;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:22px">
+        <p style="font-size:19px;line-height:1.6;color:rgba(0,0,0,0.84);min-height:120px">[Verified reader quote]</p>
+        <footer style="display:flex;flex-direction:column;gap:5px;margin-top:auto">
+          <span style="font-weight:600;font-size:15px;color:rgba(0,0,0,0.62)">[Initials · City, ST]</span>
+          <span style="font-size:13px;color:rgba(0,0,0,0.42)">[Optional disclosure label]</span>
+        </footer>
+      </blockquote>
+      <blockquote data-pad style="background:#F4F4F1;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:22px">
+        <p style="font-size:19px;line-height:1.6;color:rgba(0,0,0,0.84);min-height:120px">[Verified reader quote]</p>
+        <footer style="display:flex;flex-direction:column;gap:5px;margin-top:auto">
+          <span style="font-weight:600;font-size:15px;color:rgba(0,0,0,0.62)">[Initials · City, ST]</span>
+          <span style="font-size:13px;color:rgba(0,0,0,0.42)">[Optional disclosure label]</span>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+-->
+
+<section aria-label="Fit check" style="background:#F4F5F0;padding:clamp(72px,8vw,112px) 24px">
+  <div data-reveal data-two style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+    <div data-pad style="background:#FFFFFF;border:1px solid rgba(28,66,48,0.22);border-radius:22px;padding:clamp(26px,3vw,38px);box-shadow:0 1px 2px rgba(0,0,0,0.03),0 30px 56px -34px rgba(28,66,48,0.45)">
+      <div style="display:flex;align-items:center;gap:15px">
+        <span style="flex:none;position:relative;width:52px;height:52px;display:flex;align-items:center;justify-content:center">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true"><circle cx="26" cy="26" r="24.4" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="26" cy="26" r="20.6" fill="rgba(28,66,48,0.10)"/><circle cx="26" cy="26" r="20.6" stroke="#1C4230" stroke-width="1.3"/><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3 style="font-size:clamp(23px,2.2vw,29px);line-height:1.25;color:#1C4230">This Is For You If:</h3>
+      </div>
+      <ul style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;gap:13px;align-items:flex-start;padding:16px 20px;background:rgba(28,66,48,0.055);border:1px solid rgba(28,66,48,0.16);border-radius:14px;font-size:17px;line-height:1.55;color:rgba(0,0,0,0.86)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M4.4 10.6l3.4 3.4L15.8 5.9" stroke="#1C4230" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span>You've tried multiple products with little improvement</span></li>
+        <li style="display:flex;gap:13px;align-items:flex-start;padding:16px 20px;background:rgba(28,66,48,0.055);border:1px solid rgba(28,66,48,0.16);border-radius:14px;font-size:17px;line-height:1.55;color:rgba(0,0,0,0.86)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M4.4 10.6l3.4 3.4L15.8 5.9" stroke="#1C4230" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your skin feels irritated, reactive, or inconsistent</span></li>
+        <li style="display:flex;gap:13px;align-items:flex-start;padding:16px 20px;background:rgba(28,66,48,0.055);border:1px solid rgba(28,66,48,0.16);border-radius:14px;font-size:17px;line-height:1.55;color:rgba(0,0,0,0.86)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M4.4 10.6l3.4 3.4L15.8 5.9" stroke="#1C4230" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span>You want clarity without spending a fortune</span></li>
+      </ul>
+    </div>
+    <div data-pad style="background:#FFFFFF;border:1px solid rgba(158,59,43,0.20);border-radius:22px;padding:clamp(26px,3vw,38px);box-shadow:0 1px 2px rgba(0,0,0,0.03),0 30px 56px -34px rgba(158,59,43,0.35)">
+      <div style="display:flex;align-items:center;gap:15px">
+        <span style="flex:none;position:relative;width:52px;height:52px;display:flex;align-items:center;justify-content:center">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true"><circle cx="26" cy="26" r="24.4" stroke="#9E3B2B" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="26" cy="26" r="20.6" fill="rgba(158,59,43,0.09)"/><circle cx="26" cy="26" r="20.6" stroke="#9E3B2B" stroke-width="1.3"/><path d="M20 20l12 12M32 20L20 32" stroke="#9E3B2B" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </span>
+        <h3 style="font-size:clamp(23px,2.2vw,29px);line-height:1.25;color:#8A3324">This Is Not For You If:</h3>
+      </div>
+      <ul style="margin-top:26px;display:flex;flex-direction:column;gap:12px">
+        <li style="display:flex;gap:13px;align-items:flex-start;padding:16px 20px;background:rgba(158,59,43,0.05);border:1px solid rgba(158,59,43,0.16);border-radius:14px;font-size:17px;line-height:1.55;color:rgba(0,0,0,0.78)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5.8 5.8l8.4 8.4M14.2 5.8l-8.4 8.4" stroke="#9E3B2B" stroke-width="2.1" stroke-linecap="round"/></svg><span>You're looking for an overnight miracle</span></li>
+        <li style="display:flex;gap:13px;align-items:flex-start;padding:16px 20px;background:rgba(158,59,43,0.05);border:1px solid rgba(158,59,43,0.16);border-radius:14px;font-size:17px;line-height:1.55;color:rgba(0,0,0,0.78)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5.8 5.8l8.4 8.4M14.2 5.8l-8.4 8.4" stroke="#9E3B2B" stroke-width="2.1" stroke-linecap="round"/></svg><span>You want an extreme routine</span></li>
+        <li style="display:flex;gap:13px;align-items:flex-start;padding:16px 20px;background:rgba(158,59,43,0.05);border:1px solid rgba(158,59,43,0.16);border-radius:14px;font-size:17px;line-height:1.55;color:rgba(0,0,0,0.78)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5.8 5.8l8.4 8.4M14.2 5.8l-8.4 8.4" stroke="#9E3B2B" stroke-width="2.1" stroke-linecap="round"/></svg><span>You're unwilling to be consistent</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section aria-label="FAQ" style="background:#FFFFFF;padding:clamp(72px,8vw,112px) 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <h2 data-reveal style="font-size:clamp(34px,3.8vw,52px);line-height:1.12;text-align:center">Questions? <span style="color:#B8862F">Look here.</span></h2>
+    <div data-reveal data-faq-grid style="margin-top:52px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,0.65fr);gap:26px;align-items:start">
+      <div id="faq-list" style="display:flex;flex-direction:column;gap:12px">
+        <div class="faq-card">
+          <button type="button" aria-expanded="false" aria-controls="faq-a1">
+            <span style="font-weight:600;font-size:17px;line-height:1.5">Is this guide right for sensitive skin?</span>
+            <span class="faq-badge"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4.5v11M4.5 10h11" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a1">
+            <p>Yes. The focus is on balance, barrier support, and simplicity.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <button type="button" aria-expanded="false" aria-controls="faq-a2">
+            <span style="font-weight:600;font-size:17px;line-height:1.5">Do I need expensive products?</span>
+            <span class="faq-badge"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4.5v11M4.5 10h11" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a2">
+            <p>No. This guide helps you work smarter with what you already have.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <button type="button" aria-expanded="false" aria-controls="faq-a3">
+            <span style="font-weight:600;font-size:17px;line-height:1.5">How do I receive access?</span>
+            <span class="faq-badge"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4.5v11M4.5 10h11" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a3">
+            <p>Instant digital download after purchase.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <button type="button" aria-expanded="false" aria-controls="faq-a4">
+            <span style="font-weight:600;font-size:17px;line-height:1.5">Is this a subscription?</span>
+            <span class="faq-badge"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4.5v11M4.5 10h11" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a4">
+            <p>No. This is a one-time payment of $9.</p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <button type="button" aria-expanded="false" aria-controls="faq-a5">
+            <span style="font-weight:600;font-size:17px;line-height:1.5">What if it doesn't work for me?</span>
+            <span class="faq-badge"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4.5v11M4.5 10h11" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a5">
+            <p>You're protected by a 7-day money-back guarantee.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:#1C4230;border-radius:20px;padding:36px 30px;text-align:center;color:#FFFFFF;box-shadow:0 30px 60px -34px rgba(28,66,48,0.75)">
+        <img src="shield-secure.png" alt="Secure purchase" style="width:auto;height:clamp(52px,4.4vw,62px);display:block;margin:0 auto" loading="lazy">
+        <h3 style="margin-top:18px;font-size:24px;line-height:1.3">Still unsure if it's for you?</h3>
+        <p style="margin-top:12px;font-size:15.5px;line-height:1.65;color:rgba(255,255,255,0.72)">It's $9 with a 7-day money-back guarantee. If it doesn't help, you get every cent back.</p>
+        <div data-cta-wrap style="margin-top:22px;display:flex;justify-content:center">
+          <a data-cta class="cta-white" href="https://pay.hotmart.com/C103466580K">Get the guide · $9</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Outcome" style="background:#F4F4F1;padding:clamp(72px,8vw,112px) 24px">
+  <div style="max-width:1180px;margin:0 auto;text-align:center">
+    <div data-reveal style="max-width:56ch;margin:0 auto">
+      <p style="font-weight:600;font-size:clamp(23px,2.4vw,31px);line-height:1.4">If you feel like you're doing everything right, but your skin still isn't responding…</p>
+      <p style="margin-top:18px;font-size:17.5px;line-height:1.75;color:rgba(0,0,0,0.82)">The Skin Fix Guide will help you understand why and show you what to do instead, for just $9.</p>
+    </div>
+    <h2 data-reveal style="margin:64px auto 0;font-size:clamp(34px,3.8vw,52px);line-height:1.12;max-width:24ch">After reading this guide, <span style="color:#B8862F">you'll be able to:</span></h2>
+    <ul data-reveal style="margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;text-align:left">
+      <li style="display:flex;gap:14px;align-items:center;background:#FFFFFF;border-radius:16px;padding:22px 24px">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="18" cy="18" r="14.2" fill="rgba(28,66,48,0.10)"/><circle cx="18" cy="18" r="14.2" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(18 18) scale(0.692) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+        <span style="font-size:17px;line-height:1.55">Understand what may be quietly working against your skin</span>
+      </li>
+      <li style="display:flex;gap:14px;align-items:center;background:#FFFFFF;border-radius:16px;padding:22px 24px">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="18" cy="18" r="14.2" fill="rgba(28,66,48,0.10)"/><circle cx="18" cy="18" r="14.2" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(18 18) scale(0.692) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+        <span style="font-size:17px;line-height:1.55">Stop second-guessing your daily skincare routine</span>
+      </li>
+      <li style="display:flex;gap:14px;align-items:center;background:#FFFFFF;border-radius:16px;padding:22px 24px">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="18" cy="18" r="14.2" fill="rgba(28,66,48,0.10)"/><circle cx="18" cy="18" r="14.2" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(18 18) scale(0.692) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+        <span style="font-size:17px;line-height:1.55">Feel calmer and more confident about your choices</span>
+      </li>
+      <li style="display:flex;gap:14px;align-items:center;background:#FFFFFF;border-radius:16px;padding:22px 24px">
+        <span style="flex:none;display:flex;align-items:center;justify-content:center"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="17.2" stroke="#1C4230" stroke-width="1.1" stroke-opacity="0.45"/><circle cx="18" cy="18" r="14.2" fill="rgba(28,66,48,0.10)"/><circle cx="18" cy="18" r="14.2" stroke="#1C4230" stroke-width="1.3"/><g transform="translate(18 18) scale(0.692) translate(-26 -26)"><path d="M18.4 26.6l5.1 5.1L34 20.9" stroke="#1C4230" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>
+        <span style="font-size:17px;line-height:1.55">Make simple adjustments without overwhelm</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section aria-label="Guarantee" style="background:#FFFFFF;padding:clamp(72px,8vw,112px) 24px;text-align:center">
+  <div data-reveal style="max-width:560px;margin:0 auto">
+    <img src="seal-money-back.png" alt="100% money-back guaranteed" style="width:190px;height:auto;margin:0 auto;display:block;filter:drop-shadow(0 22px 34px rgba(30,30,28,0.28))" loading="lazy">
+    <h3 style="margin-top:36px;font-size:clamp(25px,2.4vw,32px);line-height:1.25">7-Day <span style="color:#B8862F">Money-Back Guarantee</span></h3>
+    <p style="margin-top:16px;font-size:17.5px;line-height:1.75;color:rgba(0,0,0,0.82)">Try it risk-free. If this guide doesn't bring value, request a full refund within 7 days, no questions asked.</p>
+    <div data-cta-wrap style="margin-top:30px;display:flex;justify-content:center">
+      <a data-cta class="cta-primary cta-primary--sm" href="https://pay.hotmart.com/C103466580K">
+        Get Instant Access for $9
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m0 0l-4.2-4.2M15 10l-4.2 4.2" stroke="#D9A94A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Get the guide" style="background:#1C4230;padding:clamp(80px,9vw,128px) 24px;text-align:center;color:#FFFFFF">
+  <div data-reveal style="max-width:640px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px">
+    <h2 style="font-size:clamp(36px,4vw,54px);line-height:1.1">Start with <span style="color:#B8862F">one small fix</span> today.</h2>
+    <div data-cta-wrap style="display:flex;justify-content:center">
+      <a data-cta class="cta-gold" href="https://pay.hotmart.com/C103466580K">
+        Get Instant Access for $9
+        <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m0 0l-4.2-4.2M15 10l-4.2 4.2" stroke="#1C2A20" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <p style="font-size:15px;line-height:1.6;max-width:44ch;color:rgba(255,255,255,0.65)">Secure checkout powered by Hotmart. All major payment methods accepted.</p>
+  </div>
+</section>
+
+<footer style="background:#14301F;color:#FFFFFF;padding:44px 24px 96px">
+  <div data-seal style="max-width:1180px;margin:0 auto 36px;display:flex;align-items:center;justify-content:center;gap:18px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.12)">
+    <img src="seal-ssl.png" alt="100% secure payment, SSL encrypted checkout" style="width:74px;height:74px;flex:none;display:block" loading="lazy">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <span style="font-weight:600;font-size:15px">SSL encrypted checkout</span>
+      <span style="font-size:14px;line-height:1.5;color:rgba(255,255,255,0.6)">Your payment details are protected end to end.</span>
+    </div>
+  </div>
+  <div data-footer style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between">
+    <img id="footer-logo" src="logo-gold.png" alt="The Skin Fix" style="height:88px;width:auto;flex:none;display:block" loading="lazy">
+    <nav style="display:flex;flex-wrap:wrap;gap:24px;font-size:14.5px">
+      <a href="#" style="color:rgba(255,255,255,0.72)">Privacy Policy</a>
+      <a href="#" style="color:rgba(255,255,255,0.72)">Terms of Service</a>
+      <a href="#" style="color:rgba(255,255,255,0.72)">Refund Policy</a>
+      <a href="#" style="color:rgba(255,255,255,0.72)">Contact</a>
+    </nav>
+    <p style="font-size:14px;color:rgba(255,255,255,0.5)">© 2026 The Skin Fix. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="sticky-cta">
+  <span style="font-weight:700;font-size:17px;line-height:34px">$9 <span style="font-weight:400;font-size:14px;color:rgba(0,0,0,0.78)">one-time</span></span>
+  <a href="https://pay.hotmart.com/C103466580K" style="display:inline-flex;align-items:center;height:44px;padding:0 24px;background:#1C4230;color:#FFFFFF;font-weight:600;font-size:15.5px;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 10px 20px -12px rgba(28,66,48,0.8)">Get Instant Access</a>
+</div>
+
+<script>
+(function () {
+  var header = document.getElementById('site-header');
+  var sticky = document.getElementById('sticky-cta');
+  var mqMobile = window.matchMedia('(max-width: 767px)');
+  var showSticky = false;
+
+  function applyBars() {
+    sticky.classList.toggle('visible', showSticky);
+    header.classList.toggle('hidden', showSticky && mqMobile.matches);
+  }
+  function onScroll() {
+    var past = window.scrollY > window.innerHeight * 0.8;
+    if (past !== showSticky) { showSticky = past; applyBars(); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  mqMobile.addEventListener('change', applyBars);
+  onScroll();
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.faq-card'));
+  cards.forEach(function (card) {
+    var btn = card.querySelector('button');
+    btn.addEventListener('click', function () {
+      var isOpen = card.classList.contains('open');
+      cards.forEach(function (c) {
+        c.classList.remove('open');
+        c.querySelector('button').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        card.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('revealed');
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    Array.prototype.slice.call(document.querySelectorAll('[data-reveal]')).forEach(function (n, i) {
+      if (i < 1) return;
+      n.classList.add('reveal-pending');
+      io.observe(n);
+    });
+
+    var methodCards = Array.prototype.slice.call(document.querySelectorAll('.method-card'));
+    if (methodCards.length) {
+      var mio = new IntersectionObserver(function (entries) {
+        if (!window.matchMedia('(max-width: 1023px)').matches) return;
+        entries.forEach(function (e) {
+          e.target.classList.toggle('inview', e.isIntersecting);
+        });
+      }, { rootMargin: '-42% 0px -42% 0px' });
+      methodCards.forEach(function (c) { mio.observe(c); });
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
